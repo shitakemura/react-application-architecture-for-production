@@ -19,3 +19,4 @@
 #### memo
 - Chapter2
     - npx create-next-app@latest jobs-app --typescript
+    - npm install -D prettier eslint-config-prettier
