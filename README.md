@@ -20,3 +20,6 @@
 - Chapter2
     - npx create-next-app@latest jobs-app --typescript
     - npm install -D prettier eslint-config-prettier
+    - npm install -D husky lint-staged
+    - npx husky install
+    - npx husky add .husky/pre-commit "npx lint-staged"
