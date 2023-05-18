@@ -12,4 +12,5 @@ module.exports = {
     "bash -c 'npm run types:check'", // MEMO: https://github.com/okonet/lint-staged/issues/825
     'npm run format:check',
   ],
+  'package.json': ['sort-package-json'],
 }
