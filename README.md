@@ -53,3 +53,4 @@
   - npm install react-hook-form
   - npx storybook@latest init
   - npm install -D @chakra-ui/storybook-addon
+  - npm install @chakra-ui/icons
