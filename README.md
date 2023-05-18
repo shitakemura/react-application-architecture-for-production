@@ -40,9 +40,13 @@
 #### memo
 
 - Chapter2
+
   - npx create-next-app@latest jobs-app --typescript
   - npm install -D prettier eslint-config-prettier
   - npm install -D husky lint-staged
   - npx husky install
   - npx husky add .husky/pre-commit "npx lint-staged"
-  - npm install -D sort-package-json 
+  - npm install -D sort-package-json
+
+- Chapter3
+  - npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
