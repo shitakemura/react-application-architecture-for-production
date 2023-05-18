@@ -125,6 +125,17 @@ const delayedFn =
 
 export const getUser = delayedFn(() => testData.users[0], 0)
 
+export const getOrganization = delayedFn(
+  (id: string) => testData.organizations.find((o) => o.id === id) || null,
+  300
+)
+
+export const getJobs = delayedFn(
+  (organizationId: string) =>
+    testData.jobs.filter((j) => j.organizationId === organizationId),
+  300
+)
+
 const useTestData = <T>(promise: Promise<T>) => {
   const [testData, setTestData] = useState<T | null>(null)
 

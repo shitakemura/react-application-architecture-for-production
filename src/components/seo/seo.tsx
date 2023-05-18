@@ -7,7 +7,7 @@ export type SeoProps = {
 export const Seo = ({ title }: SeoProps) => {
   return (
     <Head>
-      <title></title>
+      <title>{title}</title>
     </Head>
   )
 }
