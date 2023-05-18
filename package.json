@@ -45,8 +45,13 @@
     "eslint-plugin-storybook": "^0.6.12",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "msw": "^1.2.1",
+    "msw-devtools": "^1.0.2",
     "prettier": "^2.8.8",
     "sort-package-json": "^2.4.1",
     "storybook": "^7.0.12"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
