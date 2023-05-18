@@ -7,10 +7,11 @@ const buildEslintCommand = (filenames) =>
     .join(' --file ')}`
 
 module.exports = {
-  '*.{ts,tsx}': [
+  '*.{js,ts,tsx}': [
     buildEslintCommand,
     "bash -c 'npm run types:check'", // MEMO: https://github.com/okonet/lint-staged/issues/825
     'npm run format:check',
   ],
+  '*.{json,md,yml}': 'npm run format:check',
   'package.json': ['sort-package-json'],
 }
