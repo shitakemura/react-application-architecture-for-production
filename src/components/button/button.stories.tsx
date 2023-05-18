@@ -1,5 +1,7 @@
-import { PlusSquareIcon } from '@chakra-ui/icons'
 import { Meta, StoryObj } from '@storybook/react'
+
+import { PlusSquareIcon } from '@chakra-ui/icons'
+
 import { Button } from './button'
 
 export default {

@@ -9,7 +9,9 @@ import {
   Tr,
   Text,
 } from '@chakra-ui/react'
+
 import { Entity } from '@/types'
+
 import { Loading } from '../loading'
 
 type DataTableColumn<Entry> = {

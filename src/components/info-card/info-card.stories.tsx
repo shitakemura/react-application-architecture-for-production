@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
+
 import { InfoCard } from './info-card'
 
 export default {

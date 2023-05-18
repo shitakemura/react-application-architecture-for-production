@@ -1,6 +1,8 @@
-import { Button } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ReactNode } from 'react'
+
+import NextLink from 'next/link'
+
+import { Button } from '@chakra-ui/react'
 
 const variants = {
   link: {

@@ -1,5 +1,7 @@
-import { ChakraProvider, GlobalStyle } from '@chakra-ui/react'
 import { ReactNode } from 'react'
+
+import { ChakraProvider, GlobalStyle } from '@chakra-ui/react'
+
 import { theme } from '@/config/theme'
 
 type AppProviderProps = {

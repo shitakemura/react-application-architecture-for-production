@@ -9,6 +9,7 @@
     "format:check": "npm run prettier -- --check",
     "format:fix": "npm run prettier -- --write",
     "lint": "next lint",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
     "start": "next start",
     "storybook": "storybook dev -p 6006",

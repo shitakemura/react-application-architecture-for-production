@@ -1,6 +1,7 @@
+import { ReactNode } from 'react'
+
 import { InfoOutlineIcon } from '@chakra-ui/icons'
 import { Box, Container, Flex, HStack } from '@chakra-ui/react'
-import { ReactNode } from 'react'
 
 import { Button } from '@/components/button'
 import { Link } from '@/components/link'

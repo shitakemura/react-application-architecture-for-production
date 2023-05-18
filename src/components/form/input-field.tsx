@@ -1,3 +1,5 @@
+import { FieldError, UseFormRegister } from 'react-hook-form'
+
 import {
   FormControl,
   FormHelperText,
@@ -6,7 +8,6 @@ import {
   Input,
   Textarea,
 } from '@chakra-ui/react'
-import { FieldError, UseFormRegister } from 'react-hook-form'
 
 export type InputFieldProps = {
   type?: 'text' | 'email' | 'password' | 'textarea'

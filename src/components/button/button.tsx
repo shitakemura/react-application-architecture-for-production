@@ -1,5 +1,6 @@
-import { Button as ChakraButton } from '@chakra-ui/react'
 import { MouseEventHandler, ReactNode } from 'react'
+
+import { Button as ChakraButton } from '@chakra-ui/react'
 
 const variants = {
   solid: {

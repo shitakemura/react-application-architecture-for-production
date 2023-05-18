@@ -1,6 +1,8 @@
 import { Heading, Stack } from '@chakra-ui/react'
+
 import { Content } from '@/components/content'
 import { InfoCard } from '@/components/info-card'
+
 import { Organization } from '../../types'
 
 export const OrganizationInfo = ({

@@ -1,6 +1,8 @@
-import { Heading, Stack } from '@chakra-ui/react'
-import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import { ReactElement } from 'react'
+
+import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
+
+import { Heading, Stack } from '@chakra-ui/react'
 
 import { NotFound } from '@/components/not-found'
 import { Seo } from '@/components/seo'
