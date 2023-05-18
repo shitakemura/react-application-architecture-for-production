@@ -157,3 +157,5 @@ export const useUser = () => useTestData(getUser())
 
 export const useJobs = (organizationId: string) =>
   useTestData(getJobs(organizationId))
+
+export const useJob = (id: string) => useTestData(getJob(id))
