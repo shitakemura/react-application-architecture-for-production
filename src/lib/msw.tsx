@@ -4,12 +4,11 @@ import { MSWDevTools } from 'msw-devtools'
 
 import { IS_DEVELOPMENT } from '@/config/constants'
 import { db, handlers } from '@/testing/mocks'
+import '@/testing/mocks/initialize'
 
 export type MSWWrapperProps = {
   children: ReactNode
 }
-
-require('@/testing/mocks/initialize')
 
 export const MSWWrapper = ({ children }: MSWWrapperProps) => {
   return (
