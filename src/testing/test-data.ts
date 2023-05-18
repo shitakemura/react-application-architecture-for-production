@@ -154,3 +154,6 @@ const useTestData = <T>(promise: Promise<T>) => {
 }
 
 export const useUser = () => useTestData(getUser())
+
+export const useJobs = (organizationId: string) =>
+  useTestData(getJobs(organizationId))
