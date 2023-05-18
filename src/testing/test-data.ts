@@ -136,6 +136,11 @@ export const getJobs = delayedFn(
   300
 )
 
+export const getJob = delayedFn(
+  (id: string) => testData.jobs.find((j) => j.id === id) || null,
+  300
+)
+
 const useTestData = <T>(promise: Promise<T>) => {
   const [testData, setTestData] = useState<T | null>(null)
 

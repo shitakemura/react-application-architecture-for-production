@@ -17,7 +17,7 @@ const variants = {
       opacity: '0.9',
     },
   },
-  outlin: {
+  outline: {
     variant: 'outline',
     color: 'primary',
     bg: 'white',
