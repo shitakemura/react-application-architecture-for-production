@@ -7,6 +7,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { ChakraProvider, GlobalStyle } from '@chakra-ui/react'
 
 import { theme } from '@/config/theme'
+import { Notifications } from '@/features/auth'
 import { queryClient } from '@/lib/react-query'
 
 type AppProviderProps = {
@@ -21,6 +22,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
         onError={console.error}
       >
         <GlobalStyle />
+        <Notifications />
         <QueryClientProvider client={queryClient}>
           <ReactQueryDevtools initialIsOpen={false} />
           {children}

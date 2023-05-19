@@ -84,3 +84,7 @@
   - npm install axios
   - npm install @tanstack/react-query @tanstack/react-query-devtools
   - npm install react-error-boundary
+
+- Chapter7
+
+  - npm install zustand
