@@ -6,8 +6,8 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { ChakraProvider, GlobalStyle } from '@chakra-ui/react'
 
+import { Notifications } from '@/components/notifications'
 import { theme } from '@/config/theme'
-import { Notifications } from '@/features/auth'
 import { queryClient } from '@/lib/react-query'
 
 type AppProviderProps = {
