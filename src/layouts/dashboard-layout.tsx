@@ -7,8 +7,7 @@ import { Box, Container, Flex, HStack } from '@chakra-ui/react'
 
 import { Button } from '@/components/button'
 import { Link } from '@/components/link'
-import { useLogout } from '@/features/auth'
-import { useUser } from '@/testing/test-data'
+import { useLogout, useUser } from '@/features/auth'
 
 type DashboardLayoutProps = {
   children: ReactNode

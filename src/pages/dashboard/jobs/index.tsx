@@ -4,21 +4,18 @@ import { PlusSquareIcon } from '@chakra-ui/icons'
 import { Heading, HStack } from '@chakra-ui/react'
 
 import { Link } from '@/components/link'
-import { Loading } from '@/components/loading'
 import { Seo } from '@/components/seo'
+import { useUser } from '@/features/auth'
 import { JobsList, useJobs } from '@/features/jobs'
 import { DashboardLayout } from '@/layouts/dashboard-layout'
-import { useUser } from '@/testing/test-data'
 
 export default function DashboardJobsPage() {
   const user = useUser()
   const jobs = useJobs({
     params: {
-      organizationId: user.data?.organizationId ?? '',
+      organizationId: user.data?.organizationId,
     },
   })
-
-  if (jobs.isLoading) return <Loading />
 
   if (!user.data) return null
 
