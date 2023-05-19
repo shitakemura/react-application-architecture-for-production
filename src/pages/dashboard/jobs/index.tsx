@@ -6,13 +6,17 @@ import { Heading, HStack } from '@chakra-ui/react'
 import { Link } from '@/components/link'
 import { Loading } from '@/components/loading'
 import { Seo } from '@/components/seo'
-import { JobsList } from '@/features/jobs'
+import { JobsList, useJobs } from '@/features/jobs'
 import { DashboardLayout } from '@/layouts/dashboard-layout'
-import { useJobs, useUser } from '@/testing/test-data'
+import { useUser } from '@/testing/test-data'
 
 export default function DashboardJobsPage() {
   const user = useUser()
-  const jobs = useJobs(user.data?.organizationId ?? '')
+  const jobs = useJobs({
+    params: {
+      organizationId: user.data?.organizationId ?? '',
+    },
+  })
 
   if (jobs.isLoading) return <Loading />
 
