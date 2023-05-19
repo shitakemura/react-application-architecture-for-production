@@ -37,6 +37,17 @@
   - types: all shared typescript type definitions
   - utils: all shared utility functions
 
+#### api
+
+- jobs
+
+  - GET /jobs
+  - GET /jobs/:jobId
+  - POST /jobs
+
+- organizations
+  - GET /organizations/:organizationId
+
 #### memo
 
 - Chapter2
