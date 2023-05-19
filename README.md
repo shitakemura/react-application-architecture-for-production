@@ -88,3 +88,7 @@
 - Chapter7
 
   - npm install zustand
+
+- Chapter8
+
+  - npm install -D jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
