@@ -39,6 +39,11 @@
 
 #### api
 
+- auth
+
+  - POST /auth/login
+  - POST /auth/logout
+
 - jobs
 
   - GET /jobs
