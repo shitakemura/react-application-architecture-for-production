@@ -7,7 +7,7 @@ import { Box, Container, Flex, HStack } from '@chakra-ui/react'
 
 import { Button } from '@/components/button'
 import { Link } from '@/components/link'
-import { useLogout, useUser } from '@/features/auth'
+import { useLogout, useUser, Protected } from '@/features/auth'
 
 type DashboardLayoutProps = {
   children: ReactNode
@@ -17,17 +17,19 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   const user = useUser()
 
   return (
-    <Box as="section" h="100vh" overflowY="auto">
-      <Navbar />
-      <Container as="main" maxW="container.lg" py="12">
-        {children}
-      </Container>
-      <Box py="8" textAlign="center">
-        <Link href={`/organizations/${user.data?.organizationId}`}>
-          View Public Organization Page
-        </Link>
+    <Protected>
+      <Box as="section" h="100vh" overflowY="auto">
+        <Navbar />
+        <Container as="main" maxW="container.lg" py="12">
+          {children}
+        </Container>
+        <Box py="8" textAlign="center">
+          <Link href={`/organizations/${user.data?.organizationId}`}>
+            View Public Organization Page
+          </Link>
+        </Box>
       </Box>
-    </Box>
+    </Protected>
   )
 }
 

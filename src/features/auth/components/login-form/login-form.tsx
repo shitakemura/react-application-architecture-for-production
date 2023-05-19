@@ -35,7 +35,11 @@ export const LoginForm = ({ onSuccess }: LoginFormProps) => {
         {...register('password', { required: 'Required' })}
         error={formState.errors['password']}
       />
-      <Button isLoading={login.isLoading} isDisabled={login.isLoading}>
+      <Button
+        isLoading={login.isLoading}
+        isDisabled={login.isLoading}
+        type="submit"
+      >
         Log in
       </Button>
     </Stack>
