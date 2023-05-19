@@ -61,3 +61,7 @@
   - npm install -D msw msw-devtools
   - npx msw init public/ --save
   - npm install -D @mswjs/data
+
+- Chapter6
+
+  - npm install axios
