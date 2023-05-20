@@ -1,11 +1,5 @@
 import DashboardCreateJobPage from '@/pages/dashboard/jobs/create'
-import {
-  appRender,
-  screen,
-  userEvent,
-  waitFor,
-  act,
-} from '@/testing/test-utils'
+import { appRender, screen, userEvent, waitFor } from '@/testing/test-utils'
 
 const user = userEvent.setup()
 
