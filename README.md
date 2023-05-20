@@ -91,4 +91,4 @@
 
 - Chapter8
 
-  - npm install -D jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
+  - npm install -D jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event
