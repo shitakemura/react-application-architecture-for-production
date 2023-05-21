@@ -5,9 +5,9 @@
   "scripts": {
     "build": "next build",
     "build-storybook": "storybook build",
-    "cypress": "cypress open",
-    "cypress:headless": "cypress run",
     "dev": "next dev",
+    "e2e": "cypress open",
+    "e2e:headless": "cypress run",
     "format:check": "npm run prettier -- --check",
     "format:fix": "npm run prettier -- --write",
     "lint": "next lint",
