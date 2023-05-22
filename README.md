@@ -2,7 +2,7 @@
 
 - 書籍: React Application Architecture for Production
 
-https://github.com/shitakemura/react-application-architecture-for-production/assets/15320295/56fca3d4-6225-48f5-8c0f-53b6ec5bfdb5
+https://github.com/shitakemura/react-application-architecture-for-production/assets/15320295/776daa7d-fc3a-4757-879b-ebb316031ee9
 
 #### overview
 
